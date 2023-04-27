@@ -1,4 +1,3 @@
-
 name: studio-nuxt-build
 run-name: studio nuxt build
 
@@ -61,6 +60,9 @@ jobs:
 
       - name: Install @nuxthq/studio
         run: ${{ steps.pkgman.outputs.package_manager }} add -D @nuxthq/studio
+
+      - name: Install nuxi
+        run: ${{ steps.pkgman.outputs.package_manager }} add -D nuxi
 
       - name: Create .nuxtrc
         run: echo 'modules[]=@nuxthq/studio' > .nuxtrc
