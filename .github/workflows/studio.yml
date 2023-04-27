@@ -61,14 +61,11 @@ jobs:
       - name: Install @nuxthq/studio
         run: ${{ steps.pkgman.outputs.package_manager }} add -D @nuxthq/studio
 
-      - name: Install nuxi
-        run: ${{ steps.pkgman.outputs.package_manager }} add -D nuxi
-
       - name: Create .nuxtrc
         run: echo 'modules[]=@nuxthq/studio' > .nuxtrc
 
       - name: Generate
-        run: ${{ steps.pkgman.outputs.package_manager }} nuxi generate
+        run: ${{ steps.pkgman.outputs.package_manager }} run generate
         env:
           NUXT_PUBLIC_STUDIO_API_URL: https://api.nuxt.studio
 
