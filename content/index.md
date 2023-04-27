@@ -15,6 +15,18 @@ caption: 'Source: The Federal Reserve Bank of Atlanta 2017 Diary of Consumer Pay
 ---
 ::
 
+::image
+---
+image: dash.png
+alt: Dash
+title: 'asdasdasdasd'
+caption: 'Source: kjasjlkasjkasdjadsjkdas'
+---
+::
+
+![dash.png](/images/dash.png)
+Regualr markdown image
+
 ---
 
 Look at the [Content documentation](https://content.nuxtjs.org/) to learn more.
